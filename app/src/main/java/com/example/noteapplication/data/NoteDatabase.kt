@@ -27,8 +27,6 @@ abstract class NoteDatabase : RoomDatabase() {
                 NoteDatabase::class.java,
                 "note_database"
             )
-                .fallbackToDestructiveMigration() // Optional: removes old DB if version changes
-                .build()
         }
     }
 }
